@@ -1,0 +1,39 @@
+<ion-view  title="Search">
+<br><br>
+<div class="list list-inset" >
+  <label class="item item-input" >
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search"  ng-model="searchText">
+  </label>
+</div>
+  <ion-content class="padding">
+   
+<br><br><br>
+
+     
+
+
+
+    
+
+
+ <div class="list" ng-controller="SearchCtrl" id="searchTextResults">
+
+        <a ng-repeat="item in items | filter:searchText" 
+           href=""
+           class="item item-thumbnail-left">
+
+          <img ng-src="{{ item.image }}">
+          <h2>{{ item.NameBooks }}</h2>
+          <h4>{{ item.Name }}</h4>
+        </a>
+
+      </div>
+
+
+ 
+
+    </ion-content>
+
+  
+</ion-view>

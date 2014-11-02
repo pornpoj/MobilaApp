@@ -1,0 +1,20 @@
+<ion-view  title="AddsBooks">
+<br><br>
+
+  <ion-content class="padding" ng-controller="addsCtrl">
+  <center>
+   <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}">
+    <img ng-show="imgURI === undefined" ng-src="http://placehold.it/300x300">
+    </center>
+    <br>
+ <center>
+<button class="button button-calm" ng-click="takePicture()">
+  Take photo
+</button>
+
+</center>
+
+    </ion-content>
+
+  
+</ion-view>
